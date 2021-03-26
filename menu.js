@@ -3,6 +3,19 @@ function Mensagem() {
     alert("Pedido Enviado com Sucesso, " + Nome + ", Agradecemos a Preferencia.");
 }
 
+function Images(){
+  var Carne = getSelectedValue("tipoc")
+  if(Carne == 35.9){
+    document.getElementsByName("ctipo").src="resources/cupim.jpg";
+  }
+  if(Carne == 29.99){
+    document.getElementsByName("ctipo").src="resources/costela.jpg";
+  }
+  else{
+    document.getElementsByName("ctipo").src="resources/picanha.jpg";
+  }
+}
+
 function getSelectedValue(id) {
   const select = document.getElementById(id);
   return Number(select.options[select.selectedIndex].value);
