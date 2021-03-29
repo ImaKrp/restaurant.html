@@ -164,8 +164,9 @@ label{
   margin: 20px;
 }
 
-#pratos{
+#ctipo, #mtipo, #stipo{
   width: 20vw;
+  border-radius: 15px;
 }
 
 #lb{

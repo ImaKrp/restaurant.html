@@ -3,18 +3,8 @@ function Mensagem() {
     alert("Pedido Enviado com Sucesso, " + Nome + ", Agradecemos a Preferencia.");
 }
 
-function Images(){
-  var Carne = getSelectedValue("tipoc")
-  if(Carne == 35.9){
-    document.getElementsByName("ctipo").src="resources/cupim.jpg";
-  }
-  if(Carne == 29.99){
-    document.getElementsByName("ctipo").src="resources/costela.jpg";
-  }
-  else{
-    document.getElementsByName("ctipo").src="resources/picanha.jpg";
-  }
-}
+  
+
 
 function getSelectedValue(id) {
   const select = document.getElementById(id);
@@ -25,6 +15,62 @@ function getInputNumberValue(id) {
 }
 function getCheckedRadio(id) {
   return document.getElementById(id).checked;
+}
+
+function ImagesC(){
+  var Carne = getSelectedValue("tipoc")
+  console.log(Carne)
+
+  if(Carne === 35.9){
+    document.getElementById("ctipo").src="resources/cupim.jpg";
+    console.log("1 if")
+  }
+  else if(Carne === 29.99){
+    document.getElementById("ctipo").src="resources/costela.jpg";
+    console.log("2 if")
+  }
+  else if(Carne === 49.90){
+    document.getElementById("ctipo").src="resources/picanha.jpg";
+    console.log("3 if")
+  }
+}
+
+function ImagesM(){
+  var Massa = getSelectedValue("tipon")
+  
+  console.log(Carne)
+
+  if(Massa === 35.9){
+    document.getElementById("mtipo").src="resources/lasanha.jpg";
+    console.log("1 if")
+  }
+  else if(Massa === 29.99){
+    document.getElementById("mtipo").src="resources/macarrao.jpg";
+    console.log("2 if")
+  }
+  else if(Massa === 49.90){
+    document.getElementById("mtipo").src="resources/nhoque.jpg";
+    console.log("3 if")
+  }
+}
+
+function ImagesS(){
+  var Salada = getSelectedValue("tipos")
+  
+  console.log(Salada)
+
+  if(Salada === 35.9){
+    document.getElementById("stipo").src="resources/saladaestranha.jpg";
+    console.log("1 if")
+  }
+  else if(Salada === 29.99){
+    document.getElementById("stipo").src="resources/salada-rabenete.jpeg";
+    console.log("2 if")
+  }
+  else if(Salada  === 49.90){
+    document.getElementById("stipo").src="resources/salada-caesar.jpeg";
+    console.log("3 if")
+  }
 }
 
 const form = document.getElementById("form");

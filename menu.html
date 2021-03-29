@@ -30,21 +30,21 @@
                 <input type="radio" id="Salada" name="opt" value="3"></th>
                 </tr>
                 <tr>
-                <th><img src="resources/picanha.jpg" id="pratos" name="ctipo">
-                    <select id="tipoc" class="cursor" onclick="Images()">
+                <th><img src="resources/picanha.jpg" id="ctipo">
+                    <select id="tipoc" onchange="ImagesC()" >
                         <option value="49.90">Picanha - R$49.90</option>
                         <option value="35.90">File Duplo - R$35.90</option>
                         <option value="29.99">Alcatraz - R$29.99</option>
                         
-                <th><img src="resources/nhoque.jpeg" id="pratos">
-                    <select id="tipon">
+                <th><img src="resources/nhoque.jpeg" id="mtipo">
+                    <select id="tipon" onchange="ImagesM()">
                         <option value="49.90">Nhoque basic - R$49.90</option>
                         <option value="35.90">Nhoque premium - R$35.90</option>
                         <option value="29.99">Nhoque Deluxe - R$29.99</option>
                     </select>
                         
-                <th><img src="resources/salada-caesar.jpeg" id="pratos">
-                    <select id="tipos">
+                <th><img src="resources/salada-caesar.jpeg" id="stipo">
+                    <select id="tipos" onchange="ImagesS()">
                         <option value="49.90">Salada normal - R$49.90</option>
                         <option value="35.90">Salada premium - R$35.90</option>
                         <option value="29.99">Salada Deluxo - R$29.99</option>
