@@ -49,7 +49,7 @@ function ImagesM(){
     console.log("2 if")
   }
   else if(Massa === 49.90){
-    document.getElementById("mtipo").src="resources/nhoque.jpg";
+    document.getElementById("mtipo").src="resources/nhoque.jpeg";
     console.log("3 if")
   }
 }
@@ -64,7 +64,7 @@ function ImagesS(){
     console.log("1 if")
   }
   else if(Salada === 29.99){
-    document.getElementById("stipo").src="resources/salada-rabenete.jpeg";
+    document.getElementById("stipo").src="resources/salada-rabanete.jpeg";
     console.log("2 if")
   }
   else if(Salada  === 49.90){
